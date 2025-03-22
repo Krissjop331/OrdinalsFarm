@@ -1,0 +1,180 @@
+/* Импорт шрифта для игрового стиля */
+/* @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@600&family=IBM+Plex+Mono:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	font-family: 'IBM Plex Mono', monospace;
+	/* background: linear-gradient(180deg, #ded1b2, #c8b08c); */
+	background: linear-gradient(to bottom, #bcb69c 0%, #f2e8dd 100%);
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+.hero-title {
+	font-family: 'Pixelify Sans', sans-serif;
+	font-weight: 600;
+}
+
+.pixel-font {
+	font-family: 'Pixelify Sans', sans-serif;
+}
+
+.mainText {
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+:root {
+	--background: #ffffff;
+	--foreground: #171717;
+	--primary-red: #ff4b4b;
+	--primary-yellow: #fbbf24;
+	--primary-blue: #3b82f6;
+	--text-dark: #1f2937;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: #0a0a0a;
+		--foreground: #ededed;
+	}
+}
+
+.buttonShadowPixel:hover {
+	color: #000;
+	transition: all 0.2s;
+	transform: scale(1.03);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Анимации */
+@keyframes floatParticle {
+	0% {
+		transform: translateY(100vh) translateX(-50px);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-100px) translateX(50px);
+		opacity: 0;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes bounce {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-5px);
+	}
+}
+
+/* Стили для секции FAQ */
+#faq {
+	background-color: #f4f4f4;
+}
+
+.max-w-3xl {
+	max-width: 48rem;
+	margin: 0 auto;
+}
+
+/* Стили для футера */
+footer {
+	background-color: #f0f4f8;
+	padding: 3rem 0;
+}
+
+footer .text-3xl {
+	font-weight: 900;
+	color: #ef4444;
+	transition: all 0.3s ease;
+}
+
+footer .text-3xl:hover {
+	transform: scale(1.05);
+}
+
+footer p {
+	color: #718096;
+	margin-top: 1.5rem;
+	font-size: 0.875rem;
+}
+
+/* Стили для навигации */
+nav {
+	position: fixed;
+	width: 100%;
+	z-index: 50;
+	background: rgba(255, 255, 255, 0.9);
+	backdrop-filter: blur(10px);
+	transition: all 0.3s ease;
+}
+
+nav.scrolled {
+	background: rgba(255, 255, 255, 0.95);
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+nav .flex a {
+	color: #4a5568;
+	font-weight: bold;
+	transition: all 0.3s ease;
+}
+
+nav .flex a:hover {
+	color: #ef4444;
+	transform: translateY(-2px);
+}
+
+/* Стили для кнопок */
+
+.buttonCollection:hover {
+	background: #3b883e;
+	color: #000;
+	transition: all 0.3s;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+	.bg-yellow-100 {
+		text-align: center;
+		padding: 1rem;
+	}
+
+	.bg-yellow-100 h3 {
+		font-size: 1.1rem;
+	}
+
+	.container {
+		padding: 0 1rem;
+	}
+
+	.grid {
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	}
+}
