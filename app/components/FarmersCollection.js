@@ -1,56 +1,61 @@
 'use client'
 
+import { IBM_Plex_Mono } from 'next/font/google'
 import Image from 'next/image'
 import { useState } from 'react'
+const ibmPlexMono = IBM_Plex_Mono({
+	subsets: ['latin'],
+	weight: ['100', '200', '300', '400', '500', '600', '700'],
+})
 
 const initialFarmers = [
 	{
 		id: 1,
-		image: '/images/collection/IMG-1.png',
+		image: '/images/collection/IMGB-1.png',
 		name: 'FARMER 1',
 	},
 	{
 		id: 2,
-		image: '/images/collection/IMG-2.png',
-		name: 'FARMER 1',
+		image: '/images/collection/IMGB-2.png',
+		name: 'FARMER 2',
 	},
 	{
 		id: 3,
-		image: '/images/collection/IMG-3.png',
-		name: 'FARMER 1',
+		image: '/images/collection/IMGB-3.png',
+		name: 'FARMER 3',
 	},
 	{
 		id: 4,
-		image: '/images/collection/IMG-4.png',
-		name: 'FARMER 1',
+		image: '/images/collection/IMGB-4.png',
+		name: 'FARMER 4',
 	},
 	{
 		id: 5,
-		image: '/images/collection/IMG-5.png',
-		name: 'FARMER 1',
+		image: '/images/collection/IMGB-5.png',
+		name: 'FARMER 5',
 	},
 	{
 		id: 6,
-		image: '/images/collection/IMG.png',
-		name: 'FARMER 1',
+		image: '/images/collection/IMGB.png',
+		name: 'FARMER 6',
 	},
 ]
 
 const moreFarmers = [
 	{
 		id: 7,
-		image: '/images/collection/IMG-4.png',
-		name: 'FARMER 4',
+		image: '/images/collection/IMGB.png',
+		name: 'FARMER 7',
 	},
 	{
 		id: 8,
-		image: '/images/collection/IMG-3.png',
-		name: 'FARMER 3',
+		image: '/images/collection/IMGB-3.png',
+		name: 'FARMER 8',
 	},
 	{
 		id: 9,
-		image: '/images/collection/IMG-2.png',
-		name: 'FARMER 2',
+		image: '/images/collection/IMGB-2.png',
+		name: 'FARMER 9',
 	},
 ]
 
@@ -97,7 +102,7 @@ export default function FarmersCollection() {
 							/>
 							<div className='mt-7 text-left'>
 								<p
-									className='text-black font-bold pixel-font'
+									className={`${ibmPlexMono.className} text-black font-bold pixel-font`}
 									style={{
 										fontSize: 'calc(12px + 8px)',
 										marginLeft: '10px',

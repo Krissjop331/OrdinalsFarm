@@ -10,7 +10,12 @@ export default function FarmRuneIntro() {
 		>
 			<div
 				className='flex flex-col md:flex-row gap-8 p-8'
-				style={{ maxWidth: '80vw', width: '100%', gap: '5%' }}
+				style={{
+					maxWidth: '80vw',
+					width: '100%',
+					gap: '15%',
+					justifyContent: 'space-between',
+				}}
 			>
 				{/* Image */}
 				<div className='flex justify-center items-center'>
@@ -20,18 +25,22 @@ export default function FarmRuneIntro() {
 						width={400}
 						height={471}
 						style={{
-							maxWidth: '428px',
+							maxWidth: '718px',
 							minWidth: '100px',
-							maxHeight: '395px',
+							maxHeight: '663px',
 							minHeight: '150px',
 							width: '90%',
 							height: '100%',
+							transform: 'scale(1.1)',
 						}}
 					/>
 				</div>
 
 				{/* Text part */}
-				<div className='flex-1 text-center md:text-left'>
+				<div
+					className='flex-1 text-center md:text-left'
+					style={{ marginLeft: '10vw' }}
+				>
 					<h1
 						className='font-black text-black pixel-font'
 						style={{

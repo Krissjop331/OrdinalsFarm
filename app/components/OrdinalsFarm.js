@@ -43,7 +43,7 @@ export default function OrdinalsFarm() {
 							fontFamily: 'Pixelify Sans, sans-serif',
 							fontSize: isMobile ? 'calc(20px + 4vw)' : 'calc(14px + 4vw)',
 							padding: '0px',
-							textShadow: '5px 5px gray',
+							// textShadow: '5px 5px gray',
 						}}
 					>
 						Ordinals Farm

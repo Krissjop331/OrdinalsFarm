@@ -24,7 +24,7 @@ export default function Footer() {
 						gap: '2vw',
 					}}
 				>
-					<Link href='https://discord.gg/OrdinalsFarm'>
+					<Link href='https://discord.gg/E4zE9RjR5Y'>
 						<Image
 							src='/images/graydiscord.png'
 							alt='discord'
@@ -33,7 +33,7 @@ export default function Footer() {
 							style={{ width: '40px', height: '40px' }}
 						/>
 					</Link>
-					<Link href='https://twitter.com/intent/tweet?text=🚜%20Get%20ready%20for%20a%20revolution%20in%20the%20NFT%20world%20with%20Ordinals%20Farm!'>
+					<Link href='https://x.com/OrdinalsFarm'>
 						<Image
 							src='/images/graytwitter.png'
 							alt='discord'
@@ -43,18 +43,6 @@ export default function Footer() {
 						/>
 					</Link>
 				</div>
-			</div>
-
-			<div className='text-center text-gray-500 text-sm mt-8'>
-				<hr
-					style={{
-						marginBottom: '20px',
-						borderColor: '#858584',
-						width: '80%',
-						margin: '20px auto',
-					}}
-				/>
-				© NFT Market.
 			</div>
 		</footer>
 	)

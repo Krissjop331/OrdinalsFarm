@@ -11,3 +11,5 @@ services:
       NODE_ENV: production
     volumes:
       - .:/app
+    env_file:
+      - .env

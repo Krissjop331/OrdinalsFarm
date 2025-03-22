@@ -14,6 +14,7 @@ RUN npm cache clean --force && npm install
 COPY . .
 
 # Собираем проект
+RUN npx prisma generate
 RUN npm run build
 
 # Указываем порт, который будет использоваться приложением

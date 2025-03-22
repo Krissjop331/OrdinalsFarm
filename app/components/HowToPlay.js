@@ -42,9 +42,9 @@ export default function HowToPlay() {
 			<p
 				className='text-black text-center mt-6 px-4 mainText'
 				style={{
-					fontSize: 'calc(12px + 5px)',
+					fontSize: 'calc(12px + 8px)',
 					marginLeft: '0%',
-					marginTop: '-5vw',
+					marginTop: '-6vw',
 					maxWidth: '600px',
 					fontWeight: 'normal',
 				}}
