@@ -47,6 +47,7 @@ export default function FarmRuneIntro() {
 							fontSize: 'calc(14px + 4vw)',
 							padding: '0px',
 							textShadow: '5px 5px gray',
+							marginLeft: '-50px',
 						}}
 					>
 						THE FARM RUNE
