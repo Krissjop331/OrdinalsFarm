@@ -60,8 +60,6 @@ next-sitemap.config.js    # Сайтмап (использует SITE_URL)
 robots.txt
 ```
 
-> ⚠️ В репозитории исходника присутствовали демонстрационные/усеченные куски кода (файлы с «…» внутри). Для портфолио этого достаточно, но при продакшн‑запуске убедитесь, что обработчики API и UI‑логика полностью реализованы.
-
 ## 🗃️ База данных
 
 `prisma/schema.prisma` содержит модель:
@@ -163,46 +161,6 @@ npm run build   # сборка
 npm run start   # запуск собранного (production)
 npm run lint    # ESLint
 ```
-
-## 🧹 Качество кода
-
-- ESLint конфиг лежит в `eslint.config.mjs`.
-- TypeScript конфиг задан (TS можно постепенно включать).
-- UI стилизуется Tailwind + кастомные CSS‑модули.
-
-## 🖼️ Скриншоты
-
-Положите изображения в `public/screenshots/` и добавьте сюда ссылки:
-
-- ![Главный экран](public/screenshots/hero.png)
-- ![Whitelist](public/screenshots/whitelist.png)
-- ![Админка](public/screenshots/admin.png)
-
-## 📦 Что коммитим / не коммитим
-
-- ✅ Код, стили, public‑ресурсы, Prisma‑схему и **миграции** (если создадите).
-- ❌ **Никогда** не коммитьте `.env` с реальными секретами. Используйте `.env.example`.
-- Проверьте `.gitignore` ниже — он уже включает типичные исключения.
-
-## ☁️ Публикация на GitHub (шаги)
-
-```bash
-git init
-git add .
-git commit -m "feat: initial portfolio version (OrdinalsFarm)"
-git branch -M main
-git remote add origin https://github.com/<ваш_ник>/ordinalsfarm.git
-git push -u origin main
-```
-
-> Описание репозитория можно взять из раздела ниже “Описание проекта”.
-
-## 📝 Описание проекта (коротко для GitHub)
-
-**OrdinalsFarm** — промо‑сайт коллекции с 3D‑акцентами, секцией Whitelist и простой админкой на Next.js (App Router). Данные whitelist хранятся в Postgres через Prisma. Проект оптимизирован под деплой на VPS (Docker + Nginx) и пригоден для демонстрации навыков работы с Next.js 15, Tailwind, three.js и базой данных.
-
-## 📄 Лицензия
-
 MIT (по желанию).
 
 ---
